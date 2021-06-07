@@ -1,0 +1,118 @@
+
+.example-container {
+    height: 100%;
+    // width: 400px;
+    // margin: 12px;
+    // border: 1px solid #555;
+}
+
+mat-drawer {
+    width: 235px;
+    // padding: 0px 10px;
+    .option_title {
+        background: #673ab7;
+        color: #fff;
+        min-height: 64px;
+        align-items: center;
+        margin: auto;
+        display: flex;
+        font-size: 18px;
+        padding: 0 16px;
+    }
+}
+    
+mat-drawer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    // scroll style 
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.nav {
+    width: 99%;
+    min-height: 64px;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    z-index: 1;
+    transition: top 0.3s;
+    top: 0px;
+}
+
+.nav.hide-nav {
+    /* You can play on opacity for nice transitions*/
+    top: -64px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-selection-list {
+    padding: 0;
+}
+
+mat-card {
+    max-width: 65%;
+    min-width: 65%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-top: 70px;
+}
+
+
+.question {
+    .que {
+        margin-bottom: 5px;
+    }
+}
+.search_box {
+    width: 400px;
+    margin: auto;
+    .search_input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        padding: 0px 0px;
+        input {
+            background: none;
+            border: none;
+            outline: none;
+            color: #fff;
+        }
+        input::placeholder {
+        color: #fff;
+        /* Firefox */
+        } 
+        input:-ms-input-placeholder  {
+        color: #fff;
+        /* Internet Explorer 10-11 */
+        } 
+        input::-ms-input-placeholder {
+        color: #fff;
+        /* Microsoft Edge */
+        } 
+        
+    }
+}
+
+@media (max-width: 768px) {
+    mat-card {
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
+
+@media (max-width: 420px) {
+    mat-card {
+        max-width: 85%;
+        min-width: 85%;
+    }
+}
+
