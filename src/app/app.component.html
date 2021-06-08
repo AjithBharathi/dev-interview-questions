@@ -14,7 +14,7 @@
   <mat-drawer-content (scroll)="onScroll($event)"  id="drawer_content">
     <!-- header -->
     <mat-toolbar class="nav" color="primary" [class.hide-nav]="hideNav">
-      <button [disableRipple]="false" (click)="drawer.toggle()" mat-icon-button class="example-icon"
+      <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
         aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
