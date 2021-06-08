@@ -34,7 +34,7 @@ mat-drawer-content {
 
 .nav {
     min-height: 50px;
-    position: relative;
+    position: sticky;
     height: 50px;
     display: flex;
     z-index: 1;
