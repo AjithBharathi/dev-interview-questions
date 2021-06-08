@@ -141,3 +141,26 @@ mat-card {
     
 }
 
+
+.table_div {
+    max-width: 100%;
+    overflow: auto;
+    table {
+        // font-family: arial, sans-serif;
+        border-collapse: separate;
+        width: 100%;
+    }
+    td, th {
+        width: 50%;
+        padding: 10px 5px;
+        word-break: break-word;
+    }
+    td {
+        text-align: left;
+        
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+}

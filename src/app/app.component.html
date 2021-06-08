@@ -34,11 +34,28 @@
     <mat-card *ngIf="questions.length >= 1">
       <div class="content" *ngFor="let que of questions; let i=index">
         <div class="question">
-          <h2 class="que">{{i+1}}. {{que.que}}</h2>
+          <h2 class="que"><span>{{i+1}}.</span> {{que.que}}</h2>
         </div>
         <div class="answer">
+          <!-- paragraph  -->
           <div class="text" *ngIf="que.ans" [innerHtml]="que.ans"></div>
+          <!-- syntax  -->
           <div class="text" *ngIf="que.syntax"></div>
+          <!-- image  -->
+          <div class="text" *ngIf="que.img">
+            <img [src]="que.img" alt="img" style="max-width: 100%;">
+          </div>
+          <!-- table  -->
+          <div *ngIf="que.ansTable && que.ansTable.length > 0" class="table_div">
+            <table>
+              <tr>
+                <th *ngFor="let col of que.column">{{col}}</th>
+              </tr>
+              <tr *ngFor="let row of que.ansTable">
+                <td *ngFor="let col of que.column">{{row[col]}}</td>
+              </tr>
+            </table>
+          </div>
           </div>
       </div>
     </mat-card>
