@@ -12,7 +12,7 @@ mat-drawer {
     .option_title {
         background: #673ab7;
         color: #fff;
-        min-height: 64px;
+        min-height: 50px;
         align-items: center;
         margin: auto;
         display: flex;
@@ -34,18 +34,19 @@ mat-drawer-content {
 
 .nav {
     width: 99%;
-    min-height: 64px;
+    min-height: 50px;
     position: fixed;
     height: 50px;
     display: flex;
     z-index: 1;
     transition: top 0.3s;
     top: 0px;
+    padding-left: 1px;
 }
 
 .nav.hide-nav {
     /* You can play on opacity for nice transitions*/
-    top: -64px;
+    top: -50px;
 }
 
 .example-spacer {
@@ -62,7 +63,8 @@ mat-card {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 0;
-    margin-top: 70px;
+    margin-top: 60px;
+    margin-bottom: 3%;
 }
 
 
@@ -85,6 +87,7 @@ mat-card {
             border: none;
             outline: none;
             color: #fff;
+            text-decoration: none;
         }
         input::placeholder {
         color: #fff;
@@ -103,16 +106,33 @@ mat-card {
 }
 
 @media (max-width: 768px) {
+    .nav {
+        width: 100%;
+        padding-left: 3px;
+    }
+   
     mat-card {
         max-width: 90%;
         min-width: 90%;
+        margin-bottom: 20%;
     }
+    
 }
 
 @media (max-width: 420px) {
+    .nav {
+        width: 100%;
+        padding-left: 3px;
+    }
+    .search_box {
+        margin-left: 2px;
+        
+    }
     mat-card {
         max-width: 85%;
         min-width: 85%;
+        margin-bottom: 20%;
     }
+    
 }
 

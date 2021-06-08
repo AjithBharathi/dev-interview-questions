@@ -57,8 +57,17 @@ export class AppComponent implements OnInit {
   }
 
   onScroll(event: any) {
-    this.hideNav = this.scrollTop < event.target.scrollTop;
-    this.scrollTop = event.target.scrollTop;
+    console.log(this.scrollTop, event.target.scrollTop)
+
+    if (this.scrollTop < event.target.scrollTop && event.target.scrollTop > 30) {
+      this.hideNav = true;
+      this.scrollTop = event.target.scrollTop;
+    }
+    if (this.scrollTop > event.target.scrollTop && this.scrollTop - event.target.scrollTop >= 30) {
+      this.hideNav = false;
+      this.scrollTop = event.target.scrollTop;
+    }
+
   }
 
   ngOnInit() {
@@ -95,6 +104,9 @@ export class AppComponent implements OnInit {
         this.questions = Html
         this.questionsCopy = Html
     }
+  }
+
+  optionClick() {
     let el = this.element.nativeElement.querySelector('#drawer_content');
     el.scrollTo(0, 0);
   }

@@ -3,7 +3,8 @@
   <mat-drawer #drawer mode="over">
     <div *ngIf="!showTitle" class="option_title">{{title}}</div>
     <mat-selection-list #que_options [multiple]="false" 
-    (selectionChange)="optionChange(que_options.selectedOptions.selected[0]?.value);drawer.toggle()">
+    (selectionChange)="optionChange(que_options.selectedOptions.selected[0]?.value)"
+    (click)="optionClick();drawer.toggle()">
       <mat-list-option *ngFor="let option of options" [value]="option.value">
         {{option.label}}
       </mat-list-option>
@@ -13,7 +14,7 @@
   <mat-drawer-content (scroll)="onScroll($event)"  id="drawer_content">
     <!-- header -->
     <mat-toolbar class="nav" color="primary" [class.hide-nav]="hideNav">
-      <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
+      <button [disableRipple]="false" (click)="drawer.toggle()" mat-icon-button class="example-icon"
         aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
@@ -21,7 +22,7 @@
       <span class="example-spacer" *ngIf="showTitle"></span>
       <div class="search_box">
         <span class="search_input">
-          <input type="text" placeholder="Search Question..." 
+          <input type="text" class="input_box" placeholder="Search Question..." 
           [(ngModel)]="searchInput" (input)="onUpdateFilter()">
           <mat-icon *ngIf="searchInput == ''">search</mat-icon>
           <mat-icon style="cursor: pointer;" *ngIf="searchInput != ''" 
@@ -40,6 +41,6 @@
         </div>
       </div>
     </mat-card>
-    <h1 *ngIf="questions.length < 1" style="margin: 80px auto;">No Questions found</h1>
+    <h2 *ngIf="questions.length < 1" style="margin: 80px auto;font-weight: 300;">No Questions found</h2>
   </mat-drawer-content>
 </mat-drawer-container>
