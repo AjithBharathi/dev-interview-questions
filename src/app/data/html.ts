@@ -245,13 +245,291 @@ export const Html = [
         que: `How to display a web page inside a web page or nesting of webpages?`,
         ans: `
             <p>The &lt;iframe&gt; tag specifies an inline frame.</p>
-            <p>An inline frame is used to embed another document within the current HTML document.</p>
+            <p>An inline frame is used to embed another (HTML) document within the current HTML document.</p>
+            <p>Using &lt;iframe&gt; we can achieve it.</p>
         `
     },
     {
         que: `Define Iframe?`,
         ans: `
-            <p>Using &lt;iframe&gt; we can achieve it.</p>
+            <p>An IFrame (Inline Frame) is an HTML document embedded inside another HTML document on a website. The IFrame HTML element is often used to insert content from another source, such as an advertisement, youtube ets into a Web page. Although an IFrame behaves like an inline image, it can be configured with its own scrollbar independent of the surrounding page's scrollbar.
+            </p>
+        `
+    },
+    {
+        que: `Mention new features in HTML5?`,
+        ans: `
+            <ul>
+            <li>Intro of audio and video: Audio and Video tags are the two major addition to HTML5.</li>
+            <li>Nav tag: The nav tag defines a set of navigation links.</li>
+            <li>Progress tag</li>
+            <li>Placeholder Attribute</li>
+            <li>Required Attribute</li>
+            <li>Email attribute</li>
+            <li>Regular Expressions</li>
+            <li>Storage</li>
+            <li>Ease of use</li>
+            </ul>
+        `
+    },
+    {
+        que: `In HTML, how to combine two or more rows or columns into a single row or column?`,
+        ans: `
+        <p>Attributes “rowspan” and “colspan” to make a cell span to multiple rows and columns</p>
+        <p>The rowspan attribute specifies the number of rows a cell should span.</p>
+        <p>syntax: &lt;td rowspan="number"&gt;</p>
+        <p>The colspan attribute defines the number of columns a cell should span.</p>
+        <p>syntax: &lt;td colspan="number"&gt;</p>
+        `
+    },
+    {
+        que: `What is cell padding?`,
+        ans: `
+            <p>Cell padding specifies the space between the cell content and its borders (cell wall).
+            </p>
+            <p>The cellpadding attribute is set in terms of pixels.
+            </p>
+            <p>&lt;table cellpadding="pixels"&gt;</p>
+        `
+    },
+    {
+        que: `What is cell spacing or border spacing?`,
+        ans: `
+            <p>Border spacing specifies the space between the cells.
+            </p>
+            <p>The cellspacing attribute is set in terms of pixels.
+            </p>
+            <p>&lt;table cellspacing="pixels"&gt;</p>
+        `
+    },
+    {
+        que: `How can we include audio or video in a webpage?`,
+        ans: `
+            <p>HTML5 provides two tags: &lt;audio&gt; and &lt;video&gt; tags using which we can add the audio or video directly in the webpage.</p>
+        `
+    },
+    {
+        que: `Are the HTML tags and elements the same thing?`,
+        ans: `
+            <p>No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, &lt;h1&gt;Heading 1&lt;/h1&gt; is a HTML element but just &lt;h1&gt; is a starting tag and &lt;/h1&gt; is a closing tag.</p>
+        `
+    },
+    {
+        que: `What are tags and attributes in HTML?`,
+        ans: `
+            <p>Tags are the primary component of the HTML which defines how the content will be structured/ formatted, whereas Attributes are used along with the HTML tags to define the characteristics of the element. For example, &lt;p align=”center”&gt;Interview questions&lt;/p&gt;, in this the ‘align’ is the attribute using which we will align the paragraph to show in the center of the view.</p>
+        `
+    },
+    {
+        que: `What are void elements in HTML?`,
+        ans: `
+            <p>HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example &lt;br /&gt;, &lt;img /&gt;, &lt;hr /&gt;, etc.</p>
+        `
+    },
+    {
+        que: `What is the difference between <strong>, <b> tags and <em>, <i> tags?`,
+        ans: `
+            <p>The effect on a normal webpage of the tags &lt;strong&gt;, &lt;b&gt;  and &lt;em&gt;, &lt;i&gt; is the same. &lt;b&gt; and &lt;i&gt; tags stands for bold and italic. These two tags only apply font styling and bold tag &lt;b&gt;, just adds more ink to the text, these tags don't say anything about the text. </p>
+            <p>Whereas, &lt;strong&gt; and &lt;em&gt; tags represents that the span of text is of strong importance or more importance and emphatic stress respectively, than the rest of the text. These tags have semantic meaning.</p>
+        `
+    },
+    {
+        que: `What is the difference between <figure> tag and <img> tag?`,
+        ans: `
+            <p>The &lt;figure&gt; tag specifies the self-contained content, like diagrams, images, code snippets, etc. &lt;figure&gt; tag is used to semantically organize the contents of an image like image, image caption, etc., whereas the &lt;img&gt; tag is used to embed the picture in the HTML document.</p>
+        `
+    },
+    {
+        que: `How to specify the metadata in HTML?`,
+        ans: `
+            <p>To specify we can use &lt;meta&gt; tag which is a void tag,i.e., it does not have a closing tag. Some of the attributes used with meta tags are: name, content, http-equiv, etc. The below image tells how to specify the metadata.</p>
+        `
+    },
+    {
+        que: `What is the significance of <head> and <body> tag in HTML?`,
+        ans: `
+            <p>&lt;head&gt; tag provides the information about the document. It should always be enclosed in the &lt;html&gt; tag. This tag contains the metadata about the webpage and the tags which are enclosed by head tag like &lt;link&gt;, &lt;meta&gt;, &lt;style&gt;, &lt;script&gt;, etc. are not displayed on the web page. Also, there can be only 1 &lt;head&gt; tag in the entire Html document and will always be before the &lt;body&gt; tag.</p>
+            <p>&lt;body&gt; tag defines the body of the HTML document. It should always be enclosed in the &lt;html&gt; tag. All the contents which needs to be displayed on the web page like images, text, audio, video, contents, using elements like &lt;p&gt;, &lt;img&gt;, &lt;audio&gt;, &lt;heading&gt;, &lt;video&gt;, &lt;div&gt;, etc. will always be enclosed by the &lt;body&gt; tag. Also, there can be only 1 body element in an HTML document and will always be after the &lt;head&gt; tag.</p>
+        `
+    },
+    {
+        que: `What is the advantage of collapsing white space?`,
+        ans: `
+            <p>In HTML, a blank sequence of whitespace characters is treated as a single space character, Because the browser collapses multiple spaces into a single space character and this helps a developer to indent lines of text without worrying about multiple spaces and maintain readability and understandability of HTML codes.</p>
+           
+        `
+    },
+    {
+        que: `What are HTML Entities?`,
+        ans: `
+            <p>Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags. Character entities are used to display reserved characters in HTML.</p>
+            <p>To use these characters in our webpage we need to use the character entities called HTML Entities</p>
+            <p>syntax: &entity_name; (or) &#entity_number;</p>
+            <p><strong>Advantage of using an entity name:</strong> An entity name is easy to remember.</p>
+            <p><strong>Disadvantage of using an entity name:</strong> Browsers may not support all entity names, but the support for entity numbers is good.</p>
+             
+        `
+    },
+    {
+        que: `What are different types of lists in HTML?`,
+        ans: `
+            <p>3 types of list</p>
+            <p><strong>Unordered list:</strong> &lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</p>
+            <p><strong>Example:</strong></p>
+            <ul><li>list 1</li><li>list 2</li></ul>
+           <p><strong>Ordered list:</strong> &lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</p>
+           <p><strong>Example:</strong></p>
+           <ol><li>list 1</li><li>list 2</li></ol>
+           <p><strong>Defination/Description list:</strong> &lt;dl&gt;&lt;dt&gt;...&lt;/dt&gt;&lt;dd&gt;...&lt;/dd&gt;&lt;/dl&gt;</p>
+           <p><strong>Example:</strong></p>
+           <dl><dt>div element</dt><dd>this is a block level element</dd><dt>span element</dt><dd>this is a inline level element</dd></dl>
+
+             
+        `
+    },
+    {
+        que: `Is it possible to change an inline element into a block level element?`,
+        ans: `
+            <p>Yes, it is possible using the “display” property with its value as “block”, to change the inline element into a block-level element.</p>
+                        
+        `
+    },
+    {
+        que: `In how many ways can we position an HTML element? Or what are the permissible values of the position attribute?`,
+        ans: `
+            <p>There are mainly 7 values of position attribute that can be used to position an HTML element:</p>
+            <p><strong>static: </strong>Default value. Here the element is positioned according to the normal flow of the document.</p>
+            <p><strong>absolute: </strong>Here the element is positioned relative to its parent element. The final position is determined by the values of left, right, top, bottom.</p>
+            <p><strong>fixed: </strong>This is similar to absolute except here the elements are positioned relative to the <html> element.</p>
+            <p><strong>relative: </strong>Here the element is positioned according to the normal flow of the document and positioned relative to its original/ normal position.</p>
+            <p><strong>initial: </strong>This resets the property to its default value.</p>
+            <p><strong>inherit: </strong>Here the element inherits or takes the property of its parent.</p>
+                        
+        `
+    },
+    {
+        que: `In how many ways you can display HTML elements?`,
+        ans: `
+            <p><strong>inline: </strong>Using this we can display any block-level element as an inline element. The height and width attribute values of the element will not affect.</p>
+            <p><strong>block: </strong>Using this, we can display any inline element as a block-level element. </p>
+            <p><strong>inline-block: </strong>TThis property is similar to inline, except by using the display as inline-block, we can actually format the element using height and width values.</p>
+            <p><strong>flex: </strong>It displays the container and element as a flexible structure. It follows flexbox property.</p>
+            <p><strong>inline-flex: </strong>It displays the flex container as an inline element while it’s content follows the flexbox properties.</p>
+            <p><strong>grid: </strong>It displays the html elements as a grid container.</p>
+            <p><strong>none: </strong>Using this property we can hide the HTML element.</p>
+                        
+        `
+    },
+    {
+        que: `How to specify the link in HTML and explain the target attribute?`,
+        ans: `
+            <p>HTML provides a hyperlink - &lt;a&gt; tag to specify the links in a webpage. The ‘href’ attribute is used to specify the link and the ‘target’ attribute is used to specify, where do we want to open the linked document. The ‘target’ attribute can have the following values:</p>
+            <ol>
+            <li><strong>_self: </strong>This is a default value. It opens the document in the same window or tab as it was clicked.</li>
+            <li><strong>_blank: </strong>It opens the document in a new window or tab.</li>
+            <li><strong>_parent: </strong>It opens the document in a parent frame.</li>
+            <li><strong>_top: </strong>It opens the document in a full-body window.</li>
+            </ol>
+                        
+        `
+    },
+    {
+        que: `What is the ‘class’ attribute in HTML?`,
+        ans: `
+            <p>The class attribute is used to specify the class name for an HTML element. Multiple elements in HTML can have the same class value. Also, it is mainly used to associate the styles written in the stylesheet with the HTML elements.</p>
+                
+        `
+    },
+    {
+        que: `What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?`,
+        ans: `
+            <p>Multiple elements in HTML can have the same class value, whereas a value of id attribute of one element cannot be associated with another HTML element.</p>
+                
+        `
+    },
+    {
+        que: `Difference between link tag <link> and anchor tag <a>?`,
+        ans: `
+            <p>The anchor tag &lt;a&gt; is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are clickable, whereas, link tag  &lt;link &gt; defines a link between a document and an external resource and these are not clickable.</p>
+                
+        `
+    },
+    {
+        que: `What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?`,
+        ans: `
+            <p>Multiple elements in HTML can have the same class value, whereas a value of id attribute of one element cannot be associated with another HTML element.</p>
+                
+        `
+    },
+    {
+        que: `How to include javascript code in HTML?`,
+        ans: `
+            <p>HTML provides a &lt;script&gt; tag using which we can run the javascript code and make our HTML page more dynamic.</p>
+                
+        `
+    },
+    {
+        que: `When to use scripts in the head and when to use scripts in the body?`,
+        ans: `
+            <p>If the scripts contain some event-triggered functions or jquery library then we should use them in the head section. If the script writes the content on the page or is not inside a function then it should be placed inside the body section at the bottom. In short, follow below three points:</p>
+            <ol>
+            <li>Place library scripts or event scripts in the head section.</li>
+            <li>Place normal scripts that do not write anything on the page, in the head section until there is any performance issue.</li>
+            <li>Place scripts that render something on the web page at the bottom of the body section.</li>
+            </ol>
+                
+        `
+    },
+    {
+        que: `In how many ways can we specify the CSS styles for the HTML element?`,
+        ans: `
+            <p>There are three ways in which we can specify the styles for HTML element:</p>
+            <ol>
+            <li><strong>Inline: </strong>Here we use the ‘style’ attribute inside the HTML element.</li>
+            <li><strong>Internal: </strong>Here we use the &lt;style&gt; tag inside the &lt;head&gt; tag. To apply the style we bind the elements using ‘id’ or ‘class’ attributes.</li>
+            <li><strong>External: </strong>Here we use the &lt;link&gt; tag inside &lt;head&gt; tag to reference the css file into our HTML code. Again the binding between elements and styles is done using ‘id’ or ‘class’ attributes.</li>
+            </ol>
+                
+        `
+    },
+    {
+        que: `What are forms and how to create forms in HTML?`,
+        ans: `
+            <p>The HTML form is used to collect the user inputs. HTML provides a &lt;form&gt; tag to create forms. To take input from the user we use the &lt;input&gt; tag inside the form so that all collected user data can be sent to the server for processing. There are different input types like ‘button’, ‘checkbox’, ‘number’, ‘text’, ‘password’, ‘submit’ etc.</p>
+            
+        `
+    },
+    {
+        que: `How to handle events in HTML?`,
+        ans: `
+            <p>HTML allows event trigger actions in browsers using javascript or JQuery. There are a lot of events like ‘onclick’, ‘ondrag’, ‘onchange’, etc.</p>
+            
+        `
+    },
+    {
+        que: `Define multipart form data?`,
+        ans: `
+            <p>Multipart form data is one of the values of the enctype attribute. It is used to send the file data to the server-side for processing. The other valid values of the enctype attribute are text/plain and application/x-www-form-urlencoded.</p>
+            
+        `
+    },
+    {
+        que: `Is drag and drop possible using HTML5 and how?`,
+        ans: `
+            <p>Yes, in HTML5 we can drag and drop an element. This can be achieved using the drag and drop related events to be used with the element which we want to drag and drop.</p>
+            
+        `
+    },
+    {
+        que: `What type of audio files can be played using HTML?`,
+        ans: `
+            <p>HTML5 supports the following three types of audio file formats:</p>
+            <ol>
+            <li>Mp3</li>
+            <li>WAV</li>
+            <li>Ogg</li>
+            </ol>
+            
         `
     },
 
